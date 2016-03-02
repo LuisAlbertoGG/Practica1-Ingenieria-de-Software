@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2/03/2016 02:36:17 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="Mapeo.Usuario" optimistic-lock="version" schema="public" table="usuario">
+    <id name="idusuario" type="int">
+      <column name="idusuario"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nombre" type="string">
+      <column name="nombre" not-null="true"/>
+    </property>
+    <property name="apellidop" type="string">
+      <column name="apellidop" not-null="true"/>
+    </property>
+    <property name="apellidom" type="string">
+      <column name="apellidom" not-null="true"/>
+    </property>
+    <property name="correo" type="string">
+      <column name="correo" not-null="true"/>
+    </property>
+    <property name="numero" type="int">
+      <column name="numero" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
